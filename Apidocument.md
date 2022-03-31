@@ -3,12 +3,15 @@
 List of city
 > http://localhost:8700/location
 > https://zomatonodejs.herokuapp.com/location
+
 List of restaurants 
 > http://localhost:8700/restaurants
->https://zomatonodejs.herokuapp.com/restaurants
+> https://zomatonodejs.herokuapp.com/restaurants
+
 restaurants wrt to city 
 > http://localhost:8700/restaurants?state_id=3
 > https://zomatonodejs.herokuapp.com/restaurants?state_id=3
+
 mealType data/quick search data  
 > http://localhost:8700/mealtype
 > https://zomatonodejs.herokuapp.com/mealtype
@@ -17,7 +20,7 @@ mealType data/quick search data
 
 restaurants wrt to quickSearch /mealType
 > http://localhost:8700/restaurants?meal_id=5
-> >https://zomatonodejs.herokuapp.com/restaurants?meal_id=5
+> https://zomatonodejs.herokuapp.com/restaurants?meal_id=5
 
 // filter //
 > cuisine filter
@@ -32,8 +35,9 @@ restaurants wrt to quickSearch /mealType
  // data respect to cuisine and cost //
 > cuisine filter + cost filter 
   > http://localhost:8700/filter/1?lcost=200&hcost=500&cuisineId=1
-  >https://zomatonodejs.herokuapp.com/filter/1?lcost=200&hcost=500&cuisineId=1
-> // sort //
+  > https://zomatonodejs.herokuapp.com/filter/1?lcost=200&hcost=500&cuisineId=1
+  
+ // sort //
     sort low to high in same quickSearch
     > http://localhost:8700/filter/1?cuisineId=1&sort=1
     > https://zomatonodejs.herokuapp.com/filter/1?cuisineId=1&sort=1
@@ -58,7 +62,7 @@ restaurants wrt to quickSearch /mealType
 
   > menu items on user selection
   > localhost:8700/menuItem
-  > 
+  > https://zomatonodejs.herokuapp.com/menuItem
   >body[4,5,7]
 
   >api to place order
@@ -67,8 +71,14 @@ restaurants wrt to quickSearch /mealType
 
 // page 5 //
 > list all order
+  > http://localhost:8700/orders
+  > https://zomatonodejs.herokuapp.com/orders
+
   > http://localhost:8700/orders/2
-  > http://localhost:8700/orders?email="anuradha@gmail.com"
+  > https://zomatonodejs.herokuapp.com/orders/2
+
+  > https://zomatonodejs.herokuapp.com/orders/orders?email="priya@gmail.com
+  > http://localhost:8700/orders?email="priya@gmail.com"
 
 Delete order 
 > localhost:8700/deleteOrder
